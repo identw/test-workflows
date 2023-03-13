@@ -20,7 +20,7 @@ on:
          type: string
        param4:
          description: 'Param 4'
-         required: true
+         required: false
          type: number
        param5:
          description: 'Param 5'
