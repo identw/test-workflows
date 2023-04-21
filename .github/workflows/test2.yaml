@@ -1,7 +1,7 @@
 name: test2
 on: 
   workflow_dispatch:
-    # inputs:
+     inputs:
        param1:
          description: 'Param 1'
          required: true
