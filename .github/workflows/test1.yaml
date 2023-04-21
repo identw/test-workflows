@@ -6,6 +6,7 @@ on:
          description: 'Param 1'
          required: true
          type: choice
+         default: info
          options:
            - info
            - warning
@@ -13,10 +14,12 @@ on:
        param2:
          description: 'Param 2'
          required: true
+         default: true
          type: boolean
        param3:
          description: 'Param 3'
          required: true
+         default: sdvdsv
          type: string
        param4:
          description: 'Param 4'
