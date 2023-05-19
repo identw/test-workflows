@@ -13,7 +13,6 @@ on:
            - debug
        param2:
          description: 'Param 2'
-         required: true
          default: true
          type: boolean
        param3:
