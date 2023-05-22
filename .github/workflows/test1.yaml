@@ -1,4 +1,5 @@
 name: test1
+run-name: test1 lalka ${{ github.ref }} ${{ github.actor }}
 on: 
   workflow_dispatch:
      inputs:
