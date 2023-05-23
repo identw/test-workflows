@@ -1,5 +1,4 @@
-name: test1
-run-name: ${{ github.ref }} ${{ github.actor }}
+name: huaweistore-qa
 on: 
   workflow_dispatch:
      inputs:
@@ -41,6 +40,3 @@ jobs:
           echo '${{ inputs.param3 }}'
           echo '${{ inputs.param4 }}'
           echo '${{ inputs.param5 }}'
-          echo $GITHUB_WORKSPACE 
-          pwd
-          ls -la ../

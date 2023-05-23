@@ -1,4 +1,5 @@
-name: test2
+name: facebookinstangames-dev
+
 on: 
   workflow_dispatch:
      inputs:

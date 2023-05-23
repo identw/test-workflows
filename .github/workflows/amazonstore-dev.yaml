@@ -1,0 +1,12 @@
+name: amazonstore-dev
+on: 
+  push:
+    branches:
+        - main
+jobs:
+  build:
+    name: build
+    runs-on: ubuntu-20.04
+    steps:
+      - run: |
+          echo "###################"

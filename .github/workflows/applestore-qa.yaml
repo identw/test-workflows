@@ -1,4 +1,4 @@
-name: test5
+name: applestore-qa
 on: 
   workflow_dispatch:
      inputs:
