@@ -43,3 +43,4 @@ jobs:
           echo '${{ inputs.param5 }}'
           echo $GITHUB_WORKSPACE 
           pwd
+          ls -la ../
