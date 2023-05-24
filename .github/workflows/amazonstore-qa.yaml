@@ -1,4 +1,4 @@
-name: amazonstore-prod
+name: amazonstore-qa
 on: 
   workflow_dispatch:
      inputs:
