@@ -1,8 +1,15 @@
 name: amazonstore-prod
 on: 
-  push:
-    branches:
-        - main
+  workflow_dispatch:
+     inputs:
+       force_release:
+         description: 'Force release?'
+         required: true
+         type: boolean
+       custom_version:
+         description: 'Custom version'
+         required: false
+         type: string
 jobs:
   build:
     name: build
@@ -10,3 +17,4 @@ jobs:
     steps:
       - run: |
           echo "###################"
+~                                       

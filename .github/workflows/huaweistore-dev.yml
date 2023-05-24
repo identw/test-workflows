@@ -1,42 +1,19 @@
 name: huaweistore-dev
-on: 
+on:
   workflow_dispatch:
      inputs:
-       param1:
-         description: 'Param 1'
+       force_release:
+         description: 'Force release?'
          required: true
-         type: choice
-         default: info
-         options:
-           - info
-           - warning
-           - debug
-       param2:
-         description: 'Param 2'
-         default: true
          type: boolean
-       param3:
-         description: 'Param 3'
-         required: true
-         default: sdvdsv
-         type: string
-       param4:
-         description: 'Param 4'
+       custom_version:
+         description: 'Custom version'
          required: false
-         type: number
-       param5:
-         description: 'Param 5'
-         required: true
-         type: environment
-jobs:
+         type: string
+jobs:      
   build:
     name: build
     runs-on: ubuntu-20.04
     steps:
       - run: |
           echo "###################"
-          echo '${{ inputs.param1 }}'
-          echo '${{ inputs.param2 }}'
-          echo '${{ inputs.param3 }}'
-          echo '${{ inputs.param4 }}'
-          echo '${{ inputs.param5 }}'

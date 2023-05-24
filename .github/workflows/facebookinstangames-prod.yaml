@@ -2,32 +2,13 @@ name: facebookinstangames-prod
 on: 
   workflow_dispatch:
      inputs:
-       param1:
-         description: 'Param 1'
-         required: true
-         type: choice
-         options:
-           - info
-           - warning
-           - debug
-       param2:
-         description: 'Param 2'
+       force_release:
+         description: 'Force release?'
          required: true
          type: boolean
-      # param3:
-      #   description: 'Param 3'
-      #   required: true
-      #   type: string
-      # param4:
-      #   description: 'Param 4'
-      #   required: true
-      #   type: number
-      # param5:
-      #   description: 'Param 4'
-      #   required: true
-      #   type: environment
-       param6:
-         required: true
+       custom_version:
+         description: 'Custom version'
+         required: false
          type: string
 jobs:
   build:
@@ -36,6 +17,3 @@ jobs:
     steps:
       - run: |
           echo "###################"
-           echo '${{ inputs.param1 }}'
-           echo '${{ inputs.param2 }}'
-           echo '${{ inputs.param6 }}'
