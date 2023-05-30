@@ -1,4 +1,4 @@
-name: amazonstore-dev1
+name: amazonstore-de
 on: 
   workflow_dispatch:
      inputs:
