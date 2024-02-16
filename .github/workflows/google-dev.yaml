@@ -1,0 +1,19 @@
+name: google-dev
+on:
+  workflow_dispatch:
+     inputs:
+       force_release:
+         description: 'Force release?'
+         required: true
+         type: boolean
+       custom_version:
+         description: 'Custom version'
+         required: false
+         type: string
+jobs:      
+  build:
+    name: build
+    runs-on: ubuntu-20.04
+    steps:
+      - run: |
+          echo "###################"
