@@ -1,15 +1,8 @@
 name: google-qa
 on:
-  workflow_dispatch:
-     inputs:
-       force_release:
-         description: 'Force release?'
-         required: true
-         type: boolean
-       custom_version:
-         description: 'Custom version'
-         required: false
-         type: string
+  push:
+    branches:
+    - main
 jobs:      
   build:
     name: build
