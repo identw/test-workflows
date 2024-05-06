@@ -1,6 +1,8 @@
 name: google-qa
 on:
-  workflow_dispatch:
+  push:
+    branches:
+    - branch1
 
 jobs:      
   build:
