@@ -17,3 +17,5 @@ jobs:
     steps:
       - run: |
           echo "###################"
+          echo "force_release: ${{ inputs.force_release }}"
+          echo "custom_version: ${{ inputs.custom_version }}"

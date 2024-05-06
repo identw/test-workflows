@@ -21,3 +21,6 @@ jobs:
     steps:
       - run: |
           echo "###################"
+          echo "force_release: ${{ inputs.force_release }}"
+          echo "custom_version: ${{ inputs.custom_version }}"
+          echo "new_param: ${{ inputs.new_param }}"
