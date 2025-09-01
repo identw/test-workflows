@@ -10,7 +10,10 @@ on:
          description: 'Custom version'
          required: false
          type: string
-         
+  push:
+    branches:
+      - main
+
 jobs:      
   build:
     name: build
