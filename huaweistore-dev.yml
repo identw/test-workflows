@@ -1,15 +1,10 @@
 name: huaweistore-dev
 on:
+  push:
+    branches:
+      - main
   workflow_dispatch:
-     inputs:
-       force_release:
-         description: 'Force release?'
-         required: true
-         type: boolean
-       custom_version:
-         description: 'Custom version'
-         required: false
-         type: string
+
 jobs:      
   build:
     name: build
@@ -17,3 +12,15 @@ jobs:
     steps:
       - run: |
           echo "###################"
+      - run: |
+          echo "###################"
+
+  test:
+    name: test
+    runs-on: ubuntu-20.04
+    steps:
+      - run: |
+          echo "###################"
+      - run: |
+          echo "###################"
+

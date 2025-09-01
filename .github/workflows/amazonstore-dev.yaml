@@ -10,10 +10,23 @@ on:
          description: 'Custom version'
          required: false
          type: string
-jobs:
+         
+jobs:      
   build:
     name: build
     runs-on: ubuntu-20.04
     steps:
       - run: |
           echo "###################"
+      - run: |
+          echo "###################"
+
+  test:
+    name: test
+    runs-on: ubuntu-20.04
+    steps:
+      - run: |
+          echo "###################"
+      - run: |
+          echo "###################"
+
